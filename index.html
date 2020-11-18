@@ -3,54 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Filmes,Series,Streaming"> 
+    <meta name="keywords" content="palavras,separadas,por,virgula">
+    <meta name="author" content="Valdecir Waldhelm">
     <!--owl css-->
     <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!--estilo da pagina-->
+    <link rel="stylesheet" href="css/style.css">
     <!--responsivo-->
     <link rel="stylesheet" href="css/responsivo.css">
     
-    
     <title>NETFLIX</title>
+
 </head>
 <body>
     <header>
         <div id="container" >
-            <a href="">Inicio</a>
-            <a href="">Filmes</a>
-            <a href="">Series</a>
-            <a href="">Contato</a>  
+            <a href="index.html">Inicio</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="series.html">Series</a>
+            <a href="contato.html">Contato</a>  
         </div>
     </header>
 
     <main>
         <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">THE BOYZ</h3>
-                <p class="descricao">Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem. </p>
-            
-            <button role="button" class="assistir">
-                <i class="fas fa-play"></i>
-                Assista Agora
-            </button>
-            <button role="button" class="informações">
-                <i class="fas fa-info-circle"></i>
-                Mais informações
-            </button>
-        </div><!--container-->
+            <div class="container-movie">
+                <div class="container">
+                    <h3>THE BOYS</h3>
+                    <p>
+                        Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem. 
+                    </p>
+                <div class="butons">
+                <button role="button" id="assistir" onclick="ocultarexibir()">
+                    <i class="fas fa-play"></i>
+                    Assista Agora
+                </button>
+                <button role="button" id="informações" onclick="exibirinfo()">
+                    <i class="fas fa-info-circle"></i>
+                    Mais informações
+                </button> 
+                </div> <!--buttons-->
+                <div id="information-serie">
+                        <h2>THE BOYS(2019)</h2>
+                        <p>
+                            Nunca conheça seus heróis.
+                            <br><br>
+                            Sinopse
+                            <br><br>
+                            Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem.
+                            Os Sete são os heróis mais poderosos da Terra. Porém, esses protetores têm um lado oculto que a maioria das pessoas desconhece. Se eles usam seus poderes para o mal, Hughie, Billy e o resto do time têm a missão de detê-los.
+                            <br><br>
+                            Primeiro episódio: 26 de julho de 2019
+                            Número de episódios: 16
+                            Número de temporadas: 2
+                            Autor:Eric Kripke
+                            Criação
+                        </p>
+                    </div> <!--information-serie-->
+                </div> <!--container-movie-->
+            </div><!--container-->
         </div>  <!--filme-principal-->
+        
+        <div id="trailer">
+            <video controls>
+                <source id="boys" src="media/trailer.mp4"> 
+            </video>
+        </div> <!--trailer-->
 
     </main>
     <div class="carrosel">
+        <h2>Séries mais vistas</h2>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filmes" src="imagens/img1.jpg" alt="">
+                <img class="box-filmes" src="imagens/img14.jpg" alt="">
             </div>
             <div class="item">
                 <img class="box-filmes" src="imagens/img2.jpg" alt="">
             </div>
             <div class="item">
-                <img class="box-filmes" src="imagens/img3.jpg" alt="">
+                <img class="box-filmes" src="imagens/img13.jpg" alt="">
             </div>
             <div class="item">
                 <img class="box-filmes" src="imagens/img4.jpg" alt="">
@@ -59,7 +92,87 @@
                 <img class="box-filmes" src="imagens/img5.jpg" alt="">
             </div>
             <div class="item">
-                <img class="box-filmes" src="imagens/img6.jpg" alt="">
+                <img class="box-filmes" src="imagens/img15.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img16.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img17.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img18.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img12.jpg" alt="">
+            </div>
+        </div> <!--owl-carousel owl-theme-->
+
+        <h2>Filmes mais vistos</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="imagens/img25.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img24.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img21.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img19.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img20.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img22.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img10.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img23.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img11.jpg" alt="">
+            </div>
+        </div> <!--owl-carousel owl-theme-->
+        
+        <h2>Top 10</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="imagens/img5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img13.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img14.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img20.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img25.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/img26.jpg" alt="">
             </div>
             <div class="item">
                 <img class="box-filmes" src="imagens/img7.jpg" alt="">
@@ -73,19 +186,30 @@
             <div class="item">
                 <img class="box-filmes" src="imagens/img10.jpg" alt="">
             </div>
-            <div class="item">
-                <img class="box-filmes" src="imagens/img11.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="imagens/img12.jpg" alt="">
-            </div>
             
-        </div>
-    </div>
+        </div> <!--owl-carousel owl-theme-->
+        
+        
+    </div> <!--carrousel-->
 
     <footer>
-        
+        <div class="logo2">
+            <img src="imagens/Netflix-icon.png" alt="" width="60px"> 
+        </div><!--logo2-->
+            <div class="descricao">
+                <a target="_blank" href="https://valdecirwaldhelm.github.io/MEU-Portifolio/">
+                <div class="imgdev">
+                <p>&copy; By Valdecir-Developer</p>
+                    <img src="imagens/developer-1.png" alt="">
+                </a>
+            </div> <!--descricao-->
+            <div class="imgdev2">
+                <a target="_blank" href="https://valdecirwaldhelm.github.io/MEU-Portifolio/">
+                    <img src="imagens/valdim.jpg" alt="Valdecir-Dev">
+                </a>
+            </div> <!--imgdev2--> 
     </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/141727d426.js" crossorigin="anonymous"></script>
 <!--owl carrosel-->

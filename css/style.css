@@ -15,13 +15,14 @@ body{
     color: white;
 }
 
+/*cabecalho*/
 div#container{
     width: 100%;
     height: auto;
     background-color: black;
     background-image: url('../imagens/netflix.png');
     background-position: 0% 50%;
-    background-size: 25% auto;
+    background-size: 20% auto;
     background-repeat: no-repeat;
     text-align: right;
 }
@@ -31,54 +32,64 @@ div#container a{
     text-decoration: none;
     color: white;
     margin: 2% 2%;
+    font-size: 25px;
     
 }
 
 div#container a:hover{
-    text-shadow: 2px 2px 8px white;
+    color: red;
+    text-shadow: 2px 2px 8px red;
 }
 
-/* FILME PRINCIPAL E ELEMENTOS */
-/*   forma de transparencia texto by valdim
-.titulo{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.descricao{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-*/
+/*FILME PRINCIPAL E ELEMENTOS */
+
 div.filme-principal{
     width: 100%;
-    height: 700px;
+    height: auto;
+}
+
+.container-movie{
+    width: 100%;
+    height: 800px;
+    /*efeito expert*/
     background-image: linear-gradient(rgba(20, 20, 20, 0.5),rgba(20, 20, 20, 0.5)100%), url('../imagens/theboyz.jpg');
     background-size: cover;
-    background-position: 90% auto;
+    background-position: center top;
     background-repeat: no-repeat;
-    
 }
 
 .filme-principal .container{
-    width: 60%;
-    padding-top: 10%;
+    width: 50%;
+    padding-top: 20%;
     margin-left: 4%;
 }
 
-.titulo{
+.filme-principal .container h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
     padding-bottom: 50px;
     font-size: 40px;
     letter-spacing: 6px;
 }
 
-.descricao{
-    text-align: left;
-    margin-bottom: 30px;
+.filme-principal .container p{
+    text-align: justify;
+    width: 70%;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.container .butons{
+    width: 100%;
+    min-width: 400px;
 }
 
 .filme-principal button{
-    width: 30%;
+    width: 35%;
     height: 45px;
     background-color: rgba(20, 20, 20, 0.5);
     color: white;
+    font-size: 10px;
     text-transform: uppercase;
     display: inline-block;
     outline: none;
@@ -95,11 +106,151 @@ button i{
     margin-right: 10px;
 }
 
+/*video e informações*/
+#trailer{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: none;
+}
+
+#trailer video{
+    width: 100%;
+    height: auto;
+}
+
+#information-serie{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    display: none;
+    
+}
+
+#information-serie h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+#information-serie p{
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 30px;
+    font-weight: normal;
+    
+}
+
+/* carrosel */
+
 .item{
     display: block;
     margin-top: 20px;
+    transition: 1,5s;
+}
+
+.item img:hover{
+    transform: scale(1.1,1.1);
+}
+
+.carrosel h2{
+    padding: 25px;
+    font-size: 25px;
+}
+
+/*formulario*//*pagina contato*/
+.formulario{
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
 }
 
 
+form{
+    width: 600px;
+    height: 700px;
+    text-align: center;
+    padding: 50px; 
+    margin: 50px auto;
+
+}
+
+form legend{
+    font-size: 30px;
+}
+
+form input[type=text], form input[type=email]{
+    width: 80%;
+    height: 40px;
+    font-family: 'arial black';
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+form textarea{
+    resize: none;
+    width: 80%;
+    font-size: 25px;
+    height: 400px;
+    font-family: 'arial black';
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+form input[type=text], form input[type=email], form textarea{
+    outline: 0;
+    border: 0;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    border-top: 4px solid white;
+    color: white;
+    text-align: center;
+    padding: 20PX;
+
+}
+
+.logo2{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.descricao{
+    display: inline-block;
+}
+
+.descricao .imgdev2{
+    vertical-align: bottom;
+}
+
+.descricao a{
+    text-decoration: none;
+    color: white;
+}
+
+.descricao img{
+    width: 80px;
+    
+}
+
+.descricao img:nth-child(1){
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.imgdev, .imgdev2{
+    display: inline-block; 
+
+}
 
 

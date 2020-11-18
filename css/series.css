@@ -1,0 +1,8 @@
+.container-movie{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5),rgba(20, 20, 20, 0.5)100%), url('../imagens/cobrakai.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}

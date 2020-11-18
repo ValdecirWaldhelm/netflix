@@ -1,24 +1,5 @@
-@media screen and (max-width: 1120px){
-    div#container{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
 
-    div.filme-principal{
-        width: 100%;
-        height: auto;
-    }
-
-    .filme-principal button{
-        width: 40%;
-        height: 45px; 
-    
-    }
-
-}
-
-@media screen and (max-width: 720px){
+@media screen and (max-width: 800px){
     div#container{
         width: 100%;
         height: auto;
@@ -31,33 +12,136 @@
         height: auto;
     }
 
+    .container .butons{
+        display: block;
+    }
+
+    #information-serie{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        width: 50%;
+        
+    }
+
     .filme-principal button{
+        width: 60%;
+        margin-top: 5px;
+    }
+
+    #information-serie h2{
+        font-size: 30px;
+    }
+    
+    #information-serie p{
+        text-align: justify;
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 30px;
+        
+    }
+
+    form legend{
+        font-size: 20px;
+    }
+
+    form input[type=text], form input[type=email]{
+        font-size: 16px;
+    }
+
+    form textarea{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 635px){
+    #information-serie{
+        top: 47%;
+        left: 2%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div#container{
+        background-position: 50%;
+        background-size: 35% auto;
+        text-align: center;
+    }
+
+    div#container a{
+        margin: 2% 2%;
+        font-size: 20px;
+        padding-top: 80px;
+        
+    }
+
+    .filme-principal .container{
         width: 80%;
-        height: 45px; 
+        padding-top: 80%;
+    }
+
+    .filme-principal .container h3{
+        padding-bottom: 30px;
+        font-size: 30px;
+        
+    }
+    
+    .filme-principal .container p{
+        text-align: justify;
+        width: 85%;
+    }
+
+    .carrosel h2{
+        font-size: 20px;
+    }
+
+    .item img{
+        padding: 80px;
+    }
+
+    #information-serie{
+        top: 15%;
+        left: 2%;
+        width: 90%;
+    }
+
+    .formulario{
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    form legend{
+        font-size: 20px;
+    }
+
+    form{
+        width: 80%;
+        padding: 20px;
     
     }
 
-}
-
-/*
-formatação professor DIO 
-@media screen and (max-width 700){
-    header .container{
-        display: flex;
-        flex-direction: column;
-
+    form input[type=text], form input[type=email]{
+        font-size: 16px;
     }
 
-    .botão{
-        margin-top: 5px;
-        width: 200px;
+    form textarea{
+        font-size: 18px;
     }
+
 }
 
-@media screen and (min-width: 1000px){
-    .descricao{
-        width: 50%;
+@media screen and (max-width: 490px){
+    #information-serie{
+        top: 15%;
+        left: 2%;
+        width: 90%;
+    }
 
+    .filme-principal .container{
+        width: 80%;
+        padding-top: 100%;
     }
 }
-*/
