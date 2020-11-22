@@ -89,7 +89,7 @@ div.filme-principal{
     height: 45px;
     background-color: rgba(20, 20, 20, 0.5);
     color: white;
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
     display: inline-block;
     outline: none;
@@ -148,15 +148,34 @@ button i{
 }
 
 /* carrosel */
-
-.item{
-    display: block;
-    margin-top: 20px;
-    transition: 1,5s;
+@keyframes animacao{
+    0%{
+        transform: translate(0%, 0%) rotatex(0deg);
+        
+    }
+    25%{
+        transform: translate(0%, 0%) rotateY(180deg);
+    }
+    50%{
+        transform: translate(0%, 0%) rotate3d(300deg);
+    }
+    100%{
+        transform: translate(0%, 0%) rotatex(0deg);
+    }
 }
 
-.item img:hover{
-    transform: scale(1.1,1.1);
+.item{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+.item:hover{
+    animation: animacao;
+    animation-name: animacao;
+    animation-duration: 1.8s;
+
 }
 
 .carrosel h2{
@@ -191,7 +210,19 @@ form input[type=text], form input[type=email]{
     font-family: 'arial black';
     font-weight: normal;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 18px;
+
+}
+
+form input[type=submit]{
+    width: 80%;
+    height: 40px;
+    font-family: 'arial black';
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 form textarea{

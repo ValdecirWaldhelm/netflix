@@ -30,6 +30,8 @@ function ocultarexibir() {
     
 }
 
+ocultarexibir()
+
 
 function exibirinfo() {
 
@@ -41,3 +43,5 @@ function exibirinfo() {
         info = "true"
     }
 }
+
+exibirinfo()
